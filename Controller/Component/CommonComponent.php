@@ -111,12 +111,12 @@ class CommonComponent extends Component {
 			$Controller->set('options', $Controller->options);
 		}
 
-		if ($messages = $Controller->Session->read('Message')) {
-			foreach ($messages as $message) {
-				$this->flashMessage($message['message'], 'error');
-			}
-			$Controller->Session->delete('Message');
-		}
+		// if ($messages = $Controller->Session->read('Message')) {
+		// 	foreach ($messages as $message) {
+		// 		$this->flashMessage($message['message'], 'error');
+		// 	}
+		// 	$Controller->Session->delete('Message');
+		// }
 		# Generates validation error messages for HABTM fields
 		//$this->_habtmValidation();
 	}
